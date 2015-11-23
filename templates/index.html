@@ -2,14 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Hello, World!</title>
+		<title>User Input</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div>
-  			<h1>Hello, World!</h1>
+  			<h1>User Input</h1>
+        <h4>Please enter a stock ticker eg. GOOG, and check desired features.</h4>
+        <form id='userinfoform_lulu' method='post' action='index' >
+              <p>
+            Ticker Symbol: <input type='text' name='ticker_name' />
+              </p>
+              <p>
+            <input type='checkbox' name='Close' />Closing Price
+              </p>
+              <p>
+            <input type='checkbox' name='Adj. Close' />Adjusted Closing Price
+              </p>
+              <p>
+            <input type='checkbox' name='Open' />Opening Price
+              </p>
+              <p>
+            <input type='checkbox' name='Adj. Open' />Adjusted Opening Price
+              </p>
+              <p>
+            <input type='submit' value='Submit' />
+              </p>
+        </form>
 		</div>
 	</body>
 </html>
